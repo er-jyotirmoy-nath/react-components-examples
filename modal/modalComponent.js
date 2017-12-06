@@ -1,4 +1,4 @@
-/* 
+/*
  * The code on this file is licensed to NSF International
  * All rights reserved
  */
@@ -31,6 +31,12 @@
          case"Step4form":
             Modalbody = Step4form;
             break;
+        case"Step6form":
+            Modalbody = Step6form;
+            break;
+        case"Step7form":
+            Modalbody = Step7form;
+            break;
      }
     return (
       <div>
@@ -44,7 +50,7 @@
 
         <Modal show={this.state.showModal} onHide={this.close.bind(this)}>
           <Modal.Header closeButton>
-            <Modal.Title>Modal heading</Modal.Title>
+            <Modal.Title>Perform File Action</Modal.Title>
           </Modal.Header>
           <Modal.Body>
          <Modalbody  fromdata={this.props.fromdata} getReportingData={this.props.getReportingData} closemodal={this.close}/>
@@ -57,4 +63,3 @@
     );
   }
 };
-
